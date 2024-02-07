@@ -31,6 +31,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('register', [StaffSetup::class, 'storeStaff']);
     Route::get('profile', [StaffSetup::class, 'profile']);
     Route::post('leave_setup', [LeaveController::class, 'leaveSetup']);
+    Route::post('approve_leave', [LeaveController::class, 'leaveApproval']);
 });
 
 
